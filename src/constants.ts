@@ -1,0 +1,1 @@
+export const RENDER_SETTINGS_STORAGE_KEY = 'render-settings';

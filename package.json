@@ -1,8 +1,10 @@
 {
-  "name": "typof-jsonc-web",
+  "name": "typeof-sjsonc-web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,10 +12,21 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "clsx": "^1.1.1",
+    "codemirror": "^5.62.2",
+    "hotkeys-js": "^3.8.7",
+    "immer": "^9.0.5",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.trim": "^4.5.1",
     "react": "^17.0.2",
+    "react-collapse-pane": "^2.0.1",
+    "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
+    "typeof-sjsonc": "^1.0.5-beta.0",
     "typescript": "^4.1.2",
+    "use-immer": "^0.6.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -26,7 +39,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": 0
+    }
   },
   "browserslist": {
     "production": [
@@ -39,5 +55,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/codemirror": "^5.60.2",
+    "@types/lodash.camelcase": "^4.3.6",
+    "@types/lodash.trim": "^4.5.6",
+    "@types/react-copy-to-clipboard": "^5.0.1",
+    "@types/styled-components": "^5.1.12"
   }
 }
