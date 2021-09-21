@@ -8,7 +8,7 @@ const LinkBox = styled.a`
 
 export function GithubLinkIcon() {
     return (
-        <LinkBox href="https://github.com/wulunyi/typeof-jsonc">
+        <LinkBox href="https://github.com/wulunyi/typeof-sjsonc-web">
             <svg 
                 height="24" 
                 viewBox="0 0 16 16" 
