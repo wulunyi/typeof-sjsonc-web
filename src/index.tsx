@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { aegis } from './utils/monitor';
 import './global.css';
+
+aegis.reportPv(124941);
 
 ReactDOM.render(
   <React.StrictMode>

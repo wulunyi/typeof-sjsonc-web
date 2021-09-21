@@ -23,6 +23,7 @@ import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import Snackbar from '@material-ui/core/Snackbar';
+import { aegis } from '../../utils/monitor';
 
 const Box = styled.div`
     padding: 10px 10px 0 10px;
@@ -178,6 +179,8 @@ export function TableEditor (props: Props) {
                 const str = getClipboardData(e);
                 const div = renderToDiv(str);
                 const table = findInderTable(div);
+                
+                aegis.report('pasteTable');
 
                 if (isTable(table)) {
                     const result = parseTableToResult(table);

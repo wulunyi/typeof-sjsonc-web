@@ -2464,6 +2464,13 @@ adjust-sourcemap-loader@3.0.0:
     loader-utils "^2.0.0"
     regex-parser "^2.2.11"
 
+aegis-web-sdk@^1.24.44:
+  version "1.24.44"
+  resolved "https://registry.yarnpkg.com/aegis-web-sdk/-/aegis-web-sdk-1.24.44.tgz#926c9b225998ec0a0c8a105d7d602abf056a4f74"
+  integrity sha512-/rGFhLFsSF3PqeRuY3v9owZaxsVIOF6w4/QLk9ISpB2/HnODXe4oxUVIuM8t9tJwtZBViyutm2NUFfeaBG5osw==
+  dependencies:
+    web-vitals "^1.1.2"
+
 aggregate-error@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-3.1.0.tgz#92670ff50f5359bdb7a3e0d40d0ec30c5737687a"
@@ -11204,10 +11211,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeof-sjsonc@^1.0.5-beta.0:
-  version "1.0.5-beta.0"
-  resolved "https://registry.yarnpkg.com/typeof-sjsonc/-/typeof-sjsonc-1.0.5-beta.0.tgz#190616e5923f21e7ab5c3919fbdc2e1b2158908f"
-  integrity sha512-BD6Cb/fbDC3BENvtSQf6etvZxb0km0SYljtOFf6LBps8eruxLKgYidSjdATlSVwJ19w90wYJbJ4gkXF84mED/w==
+typeof-sjsonc@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/typeof-sjsonc/-/typeof-sjsonc-1.0.5.tgz#7189ffce5b12fe66b69de4c3f33958c26bfb0f32"
+  integrity sha512-SSseNd7OE+dqgaHmhZYZ8eXtRKDPZT3425jbRy1kQn0X0uh+4fihd++4ccKifFvPEuX5Ak7V4JA44PjJNWQN6g==
   dependencies:
     ramda "^0.27.1"
     sjsonc-parser "^1.0.3"
@@ -11510,7 +11517,7 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-web-vitals@^1.0.1:
+web-vitals@^1.0.1, web-vitals@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
   integrity sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==

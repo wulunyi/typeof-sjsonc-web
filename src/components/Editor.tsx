@@ -10,6 +10,7 @@ import 'codemirror/theme/darcula.css';
 import 'codemirror/lib/codemirror.css';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
+import { aegis } from '../utils/monitor';
 
 const FullSizeDiv = styled.div`
     position: relative;
@@ -85,7 +86,10 @@ export function Editor(props: Props) {
                     <Tooltip title="Copy" placement="left">
                         <CopyToClipboard
                             text={data.value}
-                            onCopy={() => { updateData((draft) => { draft.showMsg = true }) }}
+                            onCopy={() => { 
+                                aegis.report('copy');
+                                updateData((draft) => { draft.showMsg = true });
+                            }}
                         >
                                 <IconButton>
                                     <CopyIcon style={{ color: '#fff' }} />

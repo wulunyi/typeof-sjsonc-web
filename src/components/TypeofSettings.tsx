@@ -12,6 +12,7 @@ import Switch from '@material-ui/core/Switch';
 import TableChartIcon from '@material-ui/icons/TableChart';
 import styled from 'styled-components';
 import hotkeys from 'hotkeys-js';
+import { aegis } from '../utils/monitor';
 
 const TitlePanel = styled.div`
     display: flex; 
@@ -84,6 +85,7 @@ export function TypeofSettings(props: SettingsProps) {
                     value={settings.name}
                     placeholder={'root'}
                     onChange={(event) => {
+                        aegis.report('settings.name');
                         updateSettings((dragft) => { dragft.name = event.target.value });
                     }}
                 />
@@ -93,6 +95,7 @@ export function TypeofSettings(props: SettingsProps) {
                     value={settings.options.prefix}
                     placeholder={'前缀'}
                     onChange={(event) => {
+                        aegis.report('settings.prefix');
                         updateSettings((dragft) => { dragft.options.prefix = event.target.value });
                     }}
                 />
@@ -102,6 +105,7 @@ export function TypeofSettings(props: SettingsProps) {
                         name="disallowComments"
                         checked={settings.options.disallowComments}
                         onChange={(_, checked) => {
+                            aegis.report('settings.disallowComments');
                             updateSettings((dragft) => {
                                 dragft.options.disallowComments = checked;
                             })
@@ -115,6 +119,7 @@ export function TypeofSettings(props: SettingsProps) {
                         name="separate"
                         checked={settings.options.separate}
                         onChange={(_, checked) => {
+                            aegis.report('settings.separate');
                             updateSettings((dragft) => {
                                 dragft.options.separate = checked;
                             })
@@ -130,6 +135,7 @@ export function TypeofSettings(props: SettingsProps) {
                 <Switch
                     checked={settings.useTableInput}
                     onChange={(_, checked) => {
+                        aegis.report('settings.useTableInput');
                         updateSettings((dragft) => {
                             dragft.useTableInput = checked;
                         });
