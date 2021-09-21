@@ -22,6 +22,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
+import Snackbar from '@material-ui/core/Snackbar';
 
 const Box = styled.div`
     padding: 10px 10px 0 10px;
@@ -98,7 +99,8 @@ interface Data {
         name: number;
         type: number;
         comments: number;
-    }
+    },
+    showMsg: boolean;
 }
 
 export function TableEditor (props: Props) {
@@ -109,7 +111,8 @@ export function TableEditor (props: Props) {
             name: 0,
             type: 1,
             comments: 2,
-        }
+        },
+        showMsg: false
     });
 
     const toSJsonc = useCallback(() => {
@@ -182,8 +185,17 @@ export function TableEditor (props: Props) {
                     updateData(draft => {
                         draft.table = result;
                     });
+                } else {
+                    updateData((draft) => { draft.showMsg = true })
                 }
             }}>
+                <Snackbar
+                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                    open={data.showMsg}
+                    autoHideDuration={1500}
+                    onClose={() => updateData((draft) => { draft.showMsg = false })}
+                    message="粘贴内容无法解析"
+                />
                 {
                     data.table.head.length === 0 &&
                     data.table.body.length === 0 &&
