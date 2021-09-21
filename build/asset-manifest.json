@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/typeof-sjsonc-web/build/static/css/main.09ecb1a4.chunk.css",
-    "main.js": "/typeof-sjsonc-web/build/static/js/main.50fe01f9.chunk.js",
-    "main.js.map": "/typeof-sjsonc-web/build/static/js/main.50fe01f9.chunk.js.map",
-    "runtime-main.js": "/typeof-sjsonc-web/build/static/js/runtime-main.9359a2ff.js",
-    "runtime-main.js.map": "/typeof-sjsonc-web/build/static/js/runtime-main.9359a2ff.js.map",
+    "main.js": "/typeof-sjsonc-web/build/static/js/main.1e5e4b6c.chunk.js",
+    "main.js.map": "/typeof-sjsonc-web/build/static/js/main.1e5e4b6c.chunk.js.map",
+    "runtime-main.js": "/typeof-sjsonc-web/build/static/js/runtime-main.ef093a6e.js",
+    "runtime-main.js.map": "/typeof-sjsonc-web/build/static/js/runtime-main.ef093a6e.js.map",
     "static/css/2.ff164465.chunk.css": "/typeof-sjsonc-web/build/static/css/2.ff164465.chunk.css",
-    "static/js/2.fffff34e.chunk.js": "/typeof-sjsonc-web/build/static/js/2.fffff34e.chunk.js",
-    "static/js/2.fffff34e.chunk.js.map": "/typeof-sjsonc-web/build/static/js/2.fffff34e.chunk.js.map",
-    "static/js/3.f25b7945.chunk.js": "/typeof-sjsonc-web/build/static/js/3.f25b7945.chunk.js",
-    "static/js/3.f25b7945.chunk.js.map": "/typeof-sjsonc-web/build/static/js/3.f25b7945.chunk.js.map",
+    "static/js/2.a92ea518.chunk.js": "/typeof-sjsonc-web/build/static/js/2.a92ea518.chunk.js",
+    "static/js/2.a92ea518.chunk.js.map": "/typeof-sjsonc-web/build/static/js/2.a92ea518.chunk.js.map",
+    "static/js/3.2a7a4064.chunk.js": "/typeof-sjsonc-web/build/static/js/3.2a7a4064.chunk.js",
+    "static/js/3.2a7a4064.chunk.js.map": "/typeof-sjsonc-web/build/static/js/3.2a7a4064.chunk.js.map",
     "index.html": "/typeof-sjsonc-web/build/index.html",
     "static/css/2.ff164465.chunk.css.map": "/typeof-sjsonc-web/build/static/css/2.ff164465.chunk.css.map",
     "static/css/main.09ecb1a4.chunk.css.map": "/typeof-sjsonc-web/build/static/css/main.09ecb1a4.chunk.css.map",
-    "static/js/2.fffff34e.chunk.js.LICENSE.txt": "/typeof-sjsonc-web/build/static/js/2.fffff34e.chunk.js.LICENSE.txt"
+    "static/js/2.a92ea518.chunk.js.LICENSE.txt": "/typeof-sjsonc-web/build/static/js/2.a92ea518.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9359a2ff.js",
+    "static/js/runtime-main.ef093a6e.js",
     "static/css/2.ff164465.chunk.css",
-    "static/js/2.fffff34e.chunk.js",
+    "static/js/2.a92ea518.chunk.js",
     "static/css/main.09ecb1a4.chunk.css",
-    "static/js/main.50fe01f9.chunk.js"
+    "static/js/main.1e5e4b6c.chunk.js"
   ]
 }
