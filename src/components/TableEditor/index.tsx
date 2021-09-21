@@ -194,7 +194,7 @@ export function TableEditor (props: Props) {
                     open={data.showMsg}
                     autoHideDuration={1500}
                     onClose={() => updateData((draft) => { draft.showMsg = false })}
-                    message="粘贴内容无法解析"
+                    message="粘贴内容无法解析，请检查粘贴内容是否为表格"
                 />
                 {
                     data.table.head.length === 0 &&
