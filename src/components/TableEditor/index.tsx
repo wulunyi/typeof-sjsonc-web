@@ -117,11 +117,11 @@ export function TableEditor (props: Props) {
 
     const toSJsonc = useCallback(() => {
         return tableToSJsonc(data.table.body, data.settings)
-    }, [data]);
+    }, [data.table, data.settings]);
 
     useEffect(() => {
         props.onChange?.(toSJsonc())
-    }, [data]);
+    }, [toSJsonc]);
 
     return (
         <Box>
@@ -164,7 +164,7 @@ export function TableEditor (props: Props) {
                                 }}/>
                             </IconButton>
                         </Tooltip>
-                        <Tooltip title="Refresh Input">
+                        <Tooltip title="Reset">
                             <IconButton>
                                 <RefreshIcon style={{ color: '#fff', cursor: 'pointer' }} onClick={() => {
                                     props.onChange?.(toSJsonc());
