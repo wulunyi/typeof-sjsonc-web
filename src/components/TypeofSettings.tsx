@@ -70,7 +70,7 @@ export function TypeofSettings(props: SettingsProps) {
         hotkeys('ctrl+`', () => {
             updateSettings(draft => { draft.useTableInput = !draft.useTableInput })
         })
-    }, [updateSettings])
+    }, [])
 
     return (
         <FormControl component="fieldset" fullWidth className={classes.root}>
@@ -143,6 +143,17 @@ export function TypeofSettings(props: SettingsProps) {
                     color="primary"
                 />
             </TitlePanel>
+            <div style={{display: 'flex', alignItems: 'center', marginTop: '10px'}}>
+                <img
+                    style={{width: '100px'}}
+                    src="https://vsassetscdn.azure.cn/v/M193_20210922.8/_content/Header/vs-logo.png"
+                    alt="icon"
+                />
+                <a 
+                    style={{marginLeft: '10px',color: '#fff'}}
+                    href="https://marketplace.visualstudio.com/items?itemName=wulunyi.vsce-typeof-sjsonc"
+                >vscode 插件</a>
+            </div>
         </FormControl>
     )
 }

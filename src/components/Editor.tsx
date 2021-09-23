@@ -68,7 +68,6 @@ export function Editor(props: Props) {
             })
         }
     }, []);
-
     useEffect(() => {
         const {editor, value} = data;
 

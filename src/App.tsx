@@ -14,6 +14,8 @@ import { storage } from './utils/storage';
 import { RENDER_SETTINGS_STORAGE_KEY } from './constants';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
+import hotkeys from 'hotkeys-js';
+import { aegis } from './utils/monitor';
 
 const FullSizeDiv = styled.div`
   position: relative;
@@ -77,6 +79,12 @@ export function App() {
 	useEffect(() => {
 		transformFn(data.sjsonc)
 	}, [transformFn]);
+
+	useEffect(() => {
+        hotkeys('ctrl+c,command+c', (ev) => {
+            aegis.report('event.copy');
+        });
+    }, [])
 
 	const renderEditor = useMemo(() => {
 		const CodeEditor = (

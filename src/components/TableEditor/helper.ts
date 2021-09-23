@@ -43,8 +43,9 @@ export function parseTableToResult(table: HTMLTableElement) {
     const body = getTableTdInnerText(tbody || table);
     let head = getTableThInnerText(thead || table);
   
+    // 如果没有 head 将 body 第一行作为 head
     if (body.length > 0 && head.length === 0) {
-      head = Array(body[0].length).fill('');
+      head = body.shift()!;
     }
   
     return {
