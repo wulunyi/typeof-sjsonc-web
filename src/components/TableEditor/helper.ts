@@ -62,8 +62,37 @@ export function tableToSJsonc(
     let result = '{\n';
 
     table.forEach(row => {
-        const typeValue = row[type];
-        const value = Number.isNaN(Number(typeValue)) ? `'${typeValue}'` : typeValue;
+        let value: string | number | boolean =  row[type];
+
+        if(Number.isNaN(Number(value))) {
+            const uperValue = value.toLocaleUpperCase();
+            value = `"${value}"`;
+
+            switch(uperValue) {
+                case 'DATE':
+                case 'TIMESTAMP':
+                    value = Date.now();
+                    break;
+                case 'LONG':
+                case 'INT':
+                case 'BIGINT':
+                case 'TINYINT':
+                    value = 0;
+                    break;
+                case 'VARCHAR':
+                case 'STRING':
+                case 'TEXT':
+                case 'CHAR':
+                case 'STR':
+                    value = '"mock text"';
+                    break;
+                case 'BOOLEAN':
+                case 'BOOL':
+                    value = true;
+                    break;
+            }
+        }
+
         const typeNameArr = row[name].split(/\s+/);
         if (typeNameArr.length === 0) { return }
         const [firstName, ...restName] = typeNameArr;

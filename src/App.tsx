@@ -60,6 +60,9 @@ export function App() {
 	const transformFn = useCallback((sjsonc: string) => {
 		const { settings } = data;
 		try {
+			updateData((dragft) => {
+				dragft.sjsonc = sjsonc;
+			});
 			const result = typeofSjsonc(
 				sjsonc,
 				trim(settings.name) === '' ? DEFAULT_SETTINGS.name : camelcase(settings.name),
@@ -67,7 +70,6 @@ export function App() {
 			);
 			updateData((dragft) => {
 				dragft.typeofResult = result;
-				dragft.sjsonc = sjsonc;
 			});
 		} catch (e) {
 			updateData((dragft) => {
