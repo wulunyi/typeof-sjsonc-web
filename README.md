@@ -2,4 +2,12 @@
 
 在线转换 json 到 typescript interface 工具
 
-[入口](https://wulunyi.github.io/typeof-sjsonc-web/build/index.html)
+[使用地址点击进入](https://wulunyi.github.io/typeof-sjsonc-web/build/index.html)
+
+解析 sjonc
+
+![image](./public/typeofsjsonc.png)
+
+解析 table
+
+![image](./public/typeoftable.png)
