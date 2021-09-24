@@ -6,8 +6,8 @@
 
 解析 sjonc
 
-![image](./public/typeofsjsonc.png)
+![image](./docs/typeofsjsonc.png)
 
 解析 table
 
-![image](./public/typeoftable.png)
+![image](./docs/typeoftable.png)

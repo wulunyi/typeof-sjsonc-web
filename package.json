@@ -5,13 +5,6 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
     "aegis-web-sdk": "^1.24.44",
     "clsx": "^1.1.1",
     "codemirror": "^5.62.2",
@@ -23,10 +16,8 @@
     "react-collapse-pane": "^2.0.1",
     "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
     "styled-components": "^5.3.0",
     "typeof-sjsonc": "^1.0.6-beta.0",
-    "typescript": "^4.1.2",
     "use-immer": "^0.6.0",
     "web-vitals": "^1.0.1"
   },
@@ -59,10 +50,19 @@
   },
   "homepage": "https://wulunyi.github.io/typeof-sjsonc-web/build",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@testing-library/user-event": "^13.2.1",
     "@types/codemirror": "^5.60.2",
+    "@types/jest": "^27.0.2",
     "@types/lodash.camelcase": "^4.3.6",
     "@types/lodash.trim": "^4.5.6",
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
     "@types/react-copy-to-clipboard": "^5.0.1",
-    "@types/styled-components": "^5.1.12"
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.12",
+    "react-scripts": "^4.0.3",
+    "typescript": "^4.4.3"
   }
 }
