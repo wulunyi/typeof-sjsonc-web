@@ -86,7 +86,7 @@ export function Editor(props: Props) {
                         <CopyToClipboard
                             text={data.value}
                             onCopy={() => { 
-                                aegis.report('copy');
+                                aegis.reportEvent('copy');
                                 updateData((draft) => { draft.showMsg = true });
                             }}
                         >

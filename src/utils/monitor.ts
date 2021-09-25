@@ -1,5 +1,3 @@
-import Aegis from 'aegis-web-sdk';
-
 export const aegis = new Aegis({
     id: 'kXD2YxMe7J2oAzeWb1', // 上报 id
     // uin: 'xxx', // 用户唯一 ID（可选）

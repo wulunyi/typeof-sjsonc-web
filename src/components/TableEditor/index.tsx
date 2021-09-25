@@ -180,7 +180,7 @@ export function TableEditor (props: Props) {
                 const div = renderToDiv(str);
                 const table = findInderTable(div);
                 
-                aegis.report('pasteTable');
+                aegis.reportEvent('pasteTable');
 
                 if (isTable(table)) {
                     const result = parseTableToResult(table);

@@ -84,7 +84,7 @@ export function App() {
 
 	useEffect(() => {
         hotkeys('ctrl+c,command+c', (ev) => {
-            aegis.report('event.copy');
+            aegis.reportEvent('event.copy');
         });
     }, [])
 
